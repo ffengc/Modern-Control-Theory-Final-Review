@@ -57,15 +57,14 @@ $$
 
 $$
 L\left[\int_{\cdots} \int f(t)(d t)^{n}\right]=\frac{F(s)}{s^{n}}$$
-
-
+$$
 ## 电感电容
 
 $$
-U_L = L \frac{\mathrm{d} i}{\mathrm{~d} t}
-$$
-
-$$
+U_L = L \frac{\mathrm{d} i}{\mathrm{~d} t} \\
 C \frac{\mathrm{d} u_{C}}{\mathrm{~d} t}=i
 $$
 
+## 常用z变换
+
+![image-20240705164132783](./assets/image-20240705164132783.png)
