@@ -12,11 +12,11 @@
 
 ## 考察重点
 
-- [考察重点.txt](./考察重点.txt)
+- [考察重点.txt](./docs/考察重点.txt)
 
 ## 常用公式
 
-- [常用公式.md](./常用公式.md)
+- [[raw-file](./docs/Common-formulas.md)] [[page](./docs/Common-formulas.html)]
 
 ## 章节复习
 
