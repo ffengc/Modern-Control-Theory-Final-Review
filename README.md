@@ -16,7 +16,7 @@
 
 ## 常用公式
 
-- [[raw-file](./docs/Common-formulas.md)] [[page](./docs/Common-formulas.html)]
+- [[raw-file](./docs/Common-formulas.md)] [[page](http://ffengc.github.io/Modern-Control-Theory-Final-Review/docs/Common-formulas.html)]
 
 ## 章节复习
 
