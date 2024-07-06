@@ -12,7 +12,7 @@
 
 ## 考察重点
 
-- [考察重点.txt](./docs/考察重点.txt)
+- [考察重点.txt](./Inspection-focus.txt)
 
 ## 常用公式
 
@@ -22,7 +22,7 @@
 
 - 第二章: 控制系统的状态空间描述 [[raw-file](./docs/chapter2.md)] [[page](http://ffengc.github.io/Modern-Control-Theory-Final-Review/docs/chapter2.html)]
 - 第三章: 状态方程的解 [[raw-file](./docs/chapter3.md)] [[page](http://ffengc.github.io/Modern-Control-Theory-Final-Review/docs/chapter3.html)]
-- 第四章: 线性系统的能控性与能观性 [[raw-file](#)] [[page](#)]
+- 第四章: 线性系统的能控性与能观性 [[raw-file](./docs/chapter4.md)] [[page](http://ffengc.github.io/Modern-Control-Theory-Final-Review/docs/chapter4.html)]
 - 第五章: 控制系统的李雅普诺夫稳定性分析 [[raw-file](#)] [[page](#)]
 - 第六章: 状态反馈和状态观测器 [[raw-file](#)] [[page](#)]
 
