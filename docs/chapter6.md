@@ -259,7 +259,54 @@ $$
 
 ### 6.4.3 降维状态观测器
 
-暂时略
+==**‼️解题步骤：**==
+
+1. 先算矩阵 $ \boldsymbol{P}=\left[\begin{array}{l}
+   D \\
+   C
+   \end{array}\right]$，其中 $D$ 是任取的，使得 $P$ 非奇异就行了，$C$ 就是原系统的 $C$。
+
+2. 对原系统的 $A$ 和 $B$ 做等价变换（$\bar{A} = PAP^{-1}$，$B = PB$），得到 $\bar{A}_{11}, \bar{A}_{12}, \bar{A}_{21}, \bar{A}_{22}, \bar{B}_{1}, \bar{B}_{2}$。一共六个值。
+
+3. 求出期望多项式 $\alpha^*(s)$。
+
+4. 求出行列式 $\operatorname{det}(sI-(\bar{A}_{11}-\bar{E}\bar{A}_{21})) = \alpha(s)$。
+
+5. 然后对比上面两个多项式就能求出 $\bar{E}$。
+
+6. 构造需要观测部分的系统 $w$
+
+   使用公式p224(6.4.13) 
+
+   $\begin{aligned}
+   \dot{\boldsymbol{w}}=\dot{\hat{\boldsymbol{x}}}_{1}-\overline{\boldsymbol{E}} \dot{\boldsymbol{y}}= & \left(\overline{\boldsymbol{A}}_{11}-\overline{\boldsymbol{E A}}_{21}\right) w+\left(\overline{\boldsymbol{B}}_{1}-\overline{\boldsymbol{E B}}_{2}\right) \boldsymbol{u} \\
+   & +\left[\overline{\boldsymbol{A}}_{12}-\overline{\boldsymbol{E A}}_{22}+\left(\overline{\boldsymbol{A}}_{11}-\overline{\boldsymbol{E A}}_{21}\right) \overline{\boldsymbol{E}}\right] \boldsymbol{y}
+   \end{aligned}$  **这个是重要公式‼️**
+
+7. 利用 $w$ 构造整个观测系统：
+   使用公式p224(6.4.14)和(6.4.15)
+
+   $\hat{\bar{x}}=\left[\begin{array}{c}
+   \hat{\boldsymbol{x}}_{1} \\
+   \boldsymbol{y}
+   \end{array}\right]=\left[\begin{array}{c}
+   w+\overline{\boldsymbol{E}} \boldsymbol{y} \\
+   \boldsymbol{y}
+   \end{array}\right]=\left[\begin{array}{cc}
+   \boldsymbol{I} & \overline{\boldsymbol{E}} \\
+   \mathbf{0} & \boldsymbol{I}
+   \end{array}\right]\left[\begin{array}{l}
+   w \\
+   \boldsymbol{y}
+   \end{array}\right]$ 和 $\hat{x} = P^{-1}\hat{\bar{x}}$ **这个也是重要公式‼️**
+
+**重要例题：**
+
+<img src="./assets/image-20240709161426396.png" alt="image-20240709161426396" style="zoom:50%;" />
+
+<img src="./assets/image-20240709161450508.png" alt="image-20240709161450508" style="zoom:67%;" />
+
+<img src="./assets/image-20240709161501787.png" alt="image-20240709161501787" style="zoom:67%;" />
 
 ## 6.5 带状态观测器的反馈系统
 
@@ -342,4 +389,3 @@ $$
 一般来说，带观测器的状态反馈系统在鲁棒性上要比用真实状态 $x(t)$ 反馈的系统要差。
 
 **p232的例6.5.1是重要例题**
-
